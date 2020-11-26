@@ -1,0 +1,54 @@
+<DOCTYPE html>
+  <html>
+    <head>
+      <title>Agregar Calificación de Alumno</title>
+    </head>
+    <body>
+      <a href="/alumno" style="margin-right: 15px"
+        >Obtener promedio de Alumno</a
+      >
+
+      <a href="/promedio-general" style="margin-right: 15px"
+        >Obtener promedio general</a
+      >
+      <a href="/materia">Obtener promedio por Materia</a>
+
+      <hr />
+      <form
+        action="/alumnos"
+        method="POST"
+        id="alumnoForm"
+        style="margin-top: 40px"
+      >
+        <h3>Agregar calificacion a un alumno</h3>
+
+        <label>Nombre del Alumno:</label><br />
+        <input type="text" name="alumno" value="" />
+
+        <br />
+        <br />
+
+        <label>Materia:</label><br />
+        <input type="text" name="materia" value="" />
+
+        <br />
+        <br />
+
+        <label>Calificacion:</label><br />
+        <input type="number" name="calificacion" value="0" min="0" max="100" />
+        <br />
+        <input
+          style="
+            margin-top: 20px;
+            padding: 10px;
+            background-color: teal;
+            color: white;
+            border: 0;
+          "
+          type="submit"
+          value="Guardar"
+        />
+      </form>
+    </body>
+  </html>
+</DOCTYPE>
